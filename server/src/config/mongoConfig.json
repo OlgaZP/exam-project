@@ -1,6 +1,6 @@
 {
   "development": {
-    "database": "shm-chat",
+    "database": "squadhelp-chat-dev",
     "host": "mongo-dev",
     "port": 27017
   },

@@ -31,22 +31,19 @@ services:
       - ./server:/server
       - /server/node_modules
 
-
   mongo-dev:
     image: mongo:4.4.6-bionic
     ports:
-      - "27017:27017"
-
-
+      - "27000:27017"
 
   db-dev:
     image: postgres:13.2-alpine
     environment:
       - POSTGRES_PASSWORD=password
       - POSTGRES_USER=postgres
-      - POSTGRES_DB=todo-dev
+      - POSTGRES_DB=squadhelp-container-dev
     ports:
-      - "5432:5432"
+      - "5400:5432"
 
 volumes:
-  server-dev:
+  server-dev: null

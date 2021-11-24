@@ -1,8 +1,8 @@
-import React from 'react';
-import { Provider } from 'react-redux';
-import { initSocket } from '../api/ws/socketController';
-import configureStore from './configureStore';
-import App from '../App';
+import React from "react";
+import { Provider } from "react-redux";
+import { initSocket } from "../api/ws/socketController";
+import configureStore from "./configureStore";
+import App from "../App";
 
 class Setup extends React.Component {
   constructor(props) {

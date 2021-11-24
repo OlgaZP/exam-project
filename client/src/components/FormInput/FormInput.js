@@ -1,10 +1,8 @@
-import React from 'react';
-import { Field, ErrorMessage } from 'formik';
-import classNames from 'classnames';
+import React from "react";
+import { Field, ErrorMessage } from "formik";
+import classNames from "classnames";
 
-const FormInput = ({
-  classes, label, name, ...rest
-}) => (
+const FormInput = ({ classes, label, name, ...rest }) => (
   <Field name={name}>
     {(props) => {
       const {
@@ -18,8 +16,18 @@ const FormInput = ({
       });
       return (
         <div className={classes.container}>
-          <input type="text" {...field} placeholder={label} className={inputClassName} {...rest} />
-          <ErrorMessage name={name} component="span" className={classes.warning} />
+          <input
+            type="text"
+            {...field}
+            placeholder={label}
+            className={inputClassName}
+            {...rest}
+          />
+          <ErrorMessage
+            name={name}
+            component="span"
+            className={classes.warning}
+          />
         </div>
       );
     }}
