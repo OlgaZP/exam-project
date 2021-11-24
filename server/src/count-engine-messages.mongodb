@@ -1,0 +1,15 @@
+
+use('squadhelp-chat-dev');
+
+// db.getName();
+// db.getCollectionNames();
+
+//1
+db.messages.find({body: /паровоз/gi}).count();
+
+db.messages.aggregate([
+  {$match: {body: /паровоз/gi}},
+  {$count: 'count_engine_messages'}
+]);
+
+db.messages.count({body: /паровоз/gi});
