@@ -4,7 +4,6 @@ use('squadhelp-chat-dev');
 // db.getName();
 // db.getCollectionNames();
 
-//1
 db.messages.find({body: /паровоз/gi}).count();
 
 db.messages.aggregate([
