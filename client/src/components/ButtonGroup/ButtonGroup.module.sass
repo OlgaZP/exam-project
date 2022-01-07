@@ -1,0 +1,50 @@
+.sectionContainer
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.buttonsContainer 
+  width: 100% 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  @media screen and (max-width:988px)
+    flex-direction: column
+
+.buttonNotActive
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center    
+  background-color: white
+  border: .5px solid rgb(231, 234, 243)
+  border-radius: 5px
+  padding: 1em
+  margin: 1em
+  @media screen and (min-width:988px)
+    max-width: 30% 
+  @media screen and (max-width:988px)
+    width: 90%  
+  @media screen and (max-width:768px)
+    flex-direction: row
+    min-width: 320px
+  &:hover  
+    border-color: rgba(44, 185, 183, .2)
+    box-shadow: 0 0 10px rgba(44, 185, 183, .13)    
+  &>div
+    color: white
+    background-color: rgb(119,131,143)
+    border-radius: 2em
+    padding: 0.5em  1em 
+  p
+    color: grey
+    width: 90%
+    margin: 0 1em
+    line-height: 1.5em
+
+.buttonActive 
+  border: 2px solid rgb(44,185,183) !important
+  &>div
+    background-color: rgb(44,185,183)
