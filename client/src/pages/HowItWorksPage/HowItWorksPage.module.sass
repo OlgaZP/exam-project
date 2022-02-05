@@ -1,0 +1,178 @@
+.navContainer
+  width: 80%
+  margin: 0 auto
+  padding: 1em
+
+  &>ul
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+.miniSpan
+  background-color: rgba(55, 125, 255, 0.1)
+  color: #377dff
+  padding: 0.5em 1em
+  border-radius: 2em
+  font-size: x-small
+
+.contentContainer
+  font-family: "Poppins",Helvetica,Arial,sans-serif;
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.howWorkSection
+  width: 80%
+  display: flex
+  justify-content: center
+  align-items: center
+  line-height: 1.5
+
+.howWorkInfo
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+
+  &>h1
+    font-size: xx-large
+    margin: 1em 0
+
+  &>p
+    color: grey
+    margin: 1em 2em 2em 0
+
+  &>a  
+   text-decoration: none
+   color: white
+   background-color: #377dff
+   border-radius: 2em
+   padding: 1em
+
+.servicesSection
+  width: 80%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.line
+  width: 100%
+  height: 0
+  border-bottom: 1px solid #e7eaf3
+
+.imageContainer  
+  height: 80%
+  width: 80%  
+
+.namingStepsSection
+  width: 100%
+  padding: 0 2em 0 2em
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+
+.sectionHeader
+  font-size: xx-large
+  margin: 1em 0 0.5em 0
+
+.namingStepsContainer
+  width: 80%
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+
+.namingStepsList
+  min-width: 300px
+  color: grey
+
+  &>li
+    border: 1px lightgrey solid
+    padding: 1em
+    margin: 1em
+
+.FAQSection
+  width: 90%
+  margin-top: 3em
+  display: flex
+  align-items: start
+
+.FAQCategories
+  width: 20%
+  background-color: #377dff
+  border-radius: 3px
+  padding: 1em 2em
+
+  a
+    text-decoration: none
+    color: #C3D8FF
+    line-height: 3em
+  
+  a:hover
+    color: white
+
+.FAQContent
+  padding: 2em
+
+.categoryTitle
+  padding-left: 0.5em
+  color: #377dff
+  font-weight: bold
+  font-size: x-large
+
+.getStartedSection
+  width: 100%
+  position: relative
+  z-index: 2
+  overflow: hidden
+  background-image: linear-gradient(150deg,#2d1582 0%,#19a0ff 100%)
+  background-repeat: repeat-x
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+
+  &>h3
+    color: #00DFFC
+    font-weight: bold
+    font-size: xx-large
+    margin: 1em 0 0.5em 0
+
+  &>p
+    color: white
+    font-size: x-large
+    line-height: 1.5
+
+  &>span 
+    color: white
+    padding: 10px 15px   
+
+  &>a 
+    border-radius: 5px
+    text-decoration: none
+    text-align: center
+    padding: 1em
+    margin: 1em
+    background-color: white
+    color: black
+    transition: all 0.5s
+    &:hover
+      transform: translateY(-3px) 
+      box-shadow: 1px 4px 5px rgba(255,255,255,0.35)
+
+.getStartedTopSVG
+  max-width: 13rem
+  z-index: -1
+  position: absolute
+  left: 0
+  top: 0
+
+.getStartedBottomSVG
+  max-width: 13rem 
+  z-index: -1
+  position: absolute
+  right: 0
+  bottom: 0
