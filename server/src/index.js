@@ -14,9 +14,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/public', express.static('public'));
-app.use(expressWinston.logger(logger));
+// app.use(expressWinston.logger(logger));
 app.use(router);
-app.use(expressWinston.errorLogger(logger));
+// app.use(expressWinston.errorLogger(logger));
 app.use(handlerError);
 
 const server = http.createServer(app);
